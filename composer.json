@@ -1,0 +1,62 @@
+{
+	"name": "wpdesk/shopmagic-for-contact-form-7",
+	"prefer-stable": true,
+	"config": {
+		"sort-packages": true,
+		"platform": {
+			"php": "7.2.5"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"kylekatarnls/update-helper": true,
+			"cweagans/composer-patches": true,
+			"wpdesk/wp-wpdesk-composer": true,
+			"wpdesk/wp-codeception": true
+		}
+	},
+	"require": {
+		"php": ">=7.2|^8",
+		"psr/log": "^1.0.1",
+		"wpdesk/wp-wpdesk-helper-override": "^1.1.0"
+	},
+	"require-dev": {
+		"10up/wp_mock": "*",
+		"phpunit/phpunit": "<8",
+		"wpdesk/wp-codeception": "^2.11",
+		"wpdesk/wp-plugin-flow-free": "^1",
+		"wpdesk/wp-wpdesk-composer": "^2.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"WPDesk\\ShopMagicCF7\\": "src"
+		},
+		"classmap": [
+			"vendor_prefixed"
+		]
+	},
+	"autoload-dev": {
+		"classmap": ["tests"]
+	},
+	"extra": {
+		"text-domain": "shopmagic-for-contact-form-7",
+		"translations-folder": "lang",
+		"translation-file-headers": {
+			"Project-Id-Version": "Shopmagic for Contact Form 7",
+			"Last-Translator": "Maciej Swoboda <maciej.swoboda@gmail.com>",
+			"X-Poedit-WPHeader": "shopmagic-for-contact-form-7.php"
+		},
+		"po-files": {
+			"pl_PL": "pl_PL.po"
+		},
+		"prefix_psr": "true"
+	},
+	"scripts": {
+		"test": "echo composer is alive",
+		"phpcs": "phpcs",
+		"phpunit-unit": "phpunit --configuration phpunit-unit.xml --coverage-text --colors=never",
+		"phpunit-unit-fast": "phpunit --configuration phpunit-unit.xml --no-coverage",
+		"phpunit-integration": "phpunit --configuration phpunit-integration.xml --coverage-text --colors=never",
+		"phpunit-integration-fast": "phpunit --configuration phpunit-integration.xml --no-coverage",
+		"docs": "apigen generate"
+	}
+}

@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'wpdesk/shopmagic-for-contact-form-7',
+        'pretty_version' => '1.3.8',
+        'version' => '1.3.8.0',
+        'reference' => 'b3756639732bb4a043b39d4f4c057b60cffab3b7',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'wpdesk/shopmagic-for-contact-form-7' => array(
+            'pretty_version' => '1.3.8',
+            'version' => '1.3.8.0',
+            'reference' => 'b3756639732bb4a043b39d4f4c057b60cffab3b7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'wpdesk/wp-wpdesk-helper-override' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'reference' => '77844fc71da7ebb7645f10f0fc15f5294fed8542',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../wpdesk/wp-wpdesk-helper-override',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
